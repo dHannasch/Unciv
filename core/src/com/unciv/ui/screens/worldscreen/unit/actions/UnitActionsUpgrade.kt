@@ -16,6 +16,8 @@ object UnitActionsUpgrade {
     ) {
         val upgradeAction = getUpgradeAction(unit)
         if (upgradeAction != null) actionList += upgradeAction
+        // temporary hack to check whether UI works like I think it does
+        if (upgradeAction != null) actionList += upgradeAction
     }
 
     /**  Common implementation for [getUpgradeAction], [getFreeUpgradeAction] and [getAncientRuinsUpgradeAction] */
